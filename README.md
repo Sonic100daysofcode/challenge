@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# 100days
+# 100daysofcoce
 
-> learn vue
+> learn vueks
 
 ## Build Setup
 
@@ -29,8 +28,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# challenge
-100DaysofCode
->>>>>>> 12f6dda457ead3b9074ea86eea2503550230505a
-

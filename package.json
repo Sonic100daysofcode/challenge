@@ -1,8 +1,8 @@
 {
-  "name": "100days",
+  "name": "100daysofcoce",
   "version": "1.0.0",
-  "description": "learn vue",
-  "author": "Sonic100daysofcode <gairagiragira@gmail.com>",
+  "description": "learn vueks",
+  "author": "sonic trick",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

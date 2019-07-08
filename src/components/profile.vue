@@ -3,7 +3,8 @@
   <div class="profile">
     <div class="content">
     <h3> {{ name }} </h3>
-    <p> {{ text }} </p>
+    <p class="p1">{{ t1 }}</p><p class="p2">{{ t2 }}</p><br>
+    <p class="p1">{{ t3 }}</p><p class="p2">{{ t4 }}</p>
     </div>
   </div>
 </template>
@@ -13,8 +14,11 @@ export default {
   name: 'profile',
   data () {
     return {
-      name: 'お腹すいた',
-      text: 'ご飯を食べたいです。'
+      name: '基本情報',
+      t1: 'ニックネーム:',
+      t2: 'そにまる',
+      t3: '血液型:',
+      t4: 'A型',
     }
   }
 }
@@ -24,24 +28,31 @@ export default {
 <style scoped>
 
 div.profile {
-  text-align: center;
+  text-align:center;
 }
 
 div.content {
-  background-color: #blue;
-  display: inline-block;
-  margin: 10px;
-  width: 30%;
+  background-color: ;
+  width: 100%;
 }
+
 
 h3 {
-  color: white;
+  color: #f8bbd0;
 }
 
-p {
-  width: 90%;
-  display: inline-block;
-  text-align: left;
+p{
+  display:inline-block;
+  text-align:left;
+}
+
+.p1{
+  margin:10px 0px 0px 0px;
+}
+
+.p2{
+  color:gray;
+  margin:0px 0px 0px 30px;
 }
 
 </style>

@@ -28,14 +28,14 @@ div.output {
 }
 
 div.content {
-  background-color: #eee;
+  background-color: #;
   display: inline-block;
   margin: 10px;
   width: 30%;
 }
 
 h3 {
-  color: white;
+  color: #f8bbd0;
 }
 
 p {

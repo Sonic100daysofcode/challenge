@@ -3,8 +3,10 @@
   <div class="profile">
     <div class="content">
     <h3> {{ name }} </h3>
-    <p class="p1">{{ t1 }}</p><p class="p2">{{ t2 }}</p><br>
-    <p class="p1">{{ t3 }}</p><p class="p2">{{ t4 }}</p>
+    <p v-for="t1 in profi">
+          <span class="p1">{{ t1.title }}</span>
+          <span class="p2">{{ t1.pro }}</span><br>
+    </p>
     </div>
   </div>
 </template>
@@ -15,10 +17,12 @@ export default {
   data () {
     return {
       name: '基本情報',
-      t1: 'ニックネーム:',
-      t2: 'そにまる',
-      t3: '血液型:',
-      t4: 'A型',
+      profi:[
+       {title:'ニックネーム:',pro:'そにまる'},
+       {title:'年齢:',pro:'21 years old'},
+       {title:'血液型:',pro:'A型'},
+       {title:'出身地:',pro:'兵庫県'}
+]
     }
   }
 }
@@ -32,8 +36,9 @@ div.profile {
 }
 
 div.content {
-  background-color: ;
-  width: 100%;
+  border-radius: 25px;
+  background: #e3f2fd;
+  margin: 0px 370px 0px 370px;
 }
 
 
@@ -42,17 +47,19 @@ h3 {
 }
 
 p{
-  display:inline-block;
-  text-align:left;
 }
 
 .p1{
-  margin:10px 0px 0px 0px;
+  text-align:left
 }
 
 .p2{
   color:gray;
-  margin:0px 0px 0px 30px;
+}
+
+span{
+  display:inline-block;
+  width:10em;
 }
 
 </style>

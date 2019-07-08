@@ -1,20 +1,20 @@
 <template>
 
-     <div class="output">
-    <div class="content" v-for="i in 2" :key=i>
+  <div class="profile">
+    <div class="content">
     <h3> {{ name }} </h3>
-    <p> {{ text }} </p></div>
+    <p> {{ text }} </p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Output',
+  name: 'profile',
   data () {
-
     return {
       name: 'お腹すいた',
-      text: 'ご飯を食べたいです。',
+      text: 'ご飯を食べたいです。'
     }
   }
 }
@@ -23,12 +23,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-div.output {
+div.profile {
   text-align: center;
 }
 
 div.content {
-  background-color: #eee;
+  background-color: #blue;
   display: inline-block;
   margin: 10px;
   width: 30%;

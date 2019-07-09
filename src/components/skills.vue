@@ -9,7 +9,7 @@
     <div class="content">
     <h3> {{ name2 }}</h3>
     <p v-for=" t2 in proc">
-      <span class="p1">{{t2.title}}</span>
+      <span class="p3">{{t2.title}}</span>
     </p>
   </div>
     </div>
@@ -35,7 +35,8 @@ export default {
       proc:[
         {title:'C++'},
         {title:'C#'},
-        {title:'Java'}
+        {title:'Java'},
+        {title:'React'}
       ]
     }
   }
@@ -68,6 +69,10 @@ p{
 
 .p2{
   color:#90a4ae;
+}
+
+.p3{
+  text-align:center
 }
 
 span{

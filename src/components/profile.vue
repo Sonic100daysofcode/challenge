@@ -26,6 +26,7 @@ export default {
       profi:[
        {title:'ニックネーム:',item:'そにまる'},
        {title:'年齢:',item:'21 years old'},
+       {title:'職業',item:'学生'},
        {title:'血液型:',item:'A型'},
        {title:'出身地:',item:'兵庫県'}
       ],

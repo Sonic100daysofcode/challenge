@@ -1,10 +1,10 @@
 <template>
-  <div class="profile">
+  <div class="skill">
     <div class="content">
     <h3> {{ name }} </h3>
     <p v-for="t1 in profi">
           <span class="p1">{{ t1.title }}</span>
-          <span class="p2">{{ t1.pro }}</span>
+          <span class="p2">{{ t1.item }}</span>
     </p></div>
     <div class="content">
     <h3> {{ name2 }}</h3>
@@ -19,15 +19,24 @@
 
 <script>
 export default {
-  name: 'profile',
+  name: 'skill',
   data () {
     return {
       name: '<言語経験>',
       profi:[
-       {title:'HTML:',pro:'2年'},
-       {title:'CSS:',pro:'2年'},
-       {title:'Javascript:',pro:'1年'},
-       {title:'Vuejs:',pro:'1週間'}
+       {title:'HTML:',item:'2年'},
+       {title:'CSS:',item:'2年'},
+       {title:'Javascript:',item:'1年'},
+       {title:'C:',item:'1年'},
+       {title:'Python3:',item:'5ヶ月'},
+       {title:'Vuejs:',item:'1週間'},
+
+      ],
+      name2: '<触ってみたい言語>',
+      proc:[
+        {title:'C++'},
+        {title:'C#'},
+        {title:'Java'}
       ]
     }
   }
@@ -37,8 +46,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-div.profile {
-  text-align:center;
+div.skill {
 }
 
 div.content {
@@ -60,7 +68,7 @@ p{
 }
 
 .p2{
-  color:gray;
+  color:#90a4ae;
 }
 
 span{

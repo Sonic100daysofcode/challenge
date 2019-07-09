@@ -4,13 +4,13 @@
     <h3> {{ name }} </h3>
     <p v-for="t1 in profi">
           <span class="p1">{{ t1.title }}</span>
-          <span class="p2">{{ t1.pro }}</span>
+          <span class="p2">{{ t1.item }}</span>
     </p></div>
     <div class="content">
     <h3> {{ name2 }}</h3>
     <p v-for=" t2 in proc">
       <span class="p1">{{t2.title}}</span>
-      <span class="p2">{{t2.pro}}</span>
+      <span class="p2">{{t2.item}}</span>
     </p>
   </div>
     </div>
@@ -24,19 +24,19 @@ export default {
     return {
       name: '<基本情報>',
       profi:[
-       {title:'ニックネーム:',pro:'そにまる'},
-       {title:'年齢:',pro:'21 years old'},
-       {title:'血液型:',pro:'A型'},
-       {title:'出身地:',pro:'兵庫県'}
+       {title:'ニックネーム:',item:'そにまる'},
+       {title:'年齢:',item:'21 years old'},
+       {title:'血液型:',item:'A型'},
+       {title:'出身地:',item:'兵庫県'}
       ],
       name2:'<性格・趣味>',
       proc:[
-      {title:'性格:',pro:'マイペース'},
-      {title:'趣味:',pro:'キャンプ/モノポリー/HTML'},
-      {title:'タイプ:',pro:'インドア'},
-      {title:'お酒:',pro:'飲まない'},
-      {title:'タバコ:',pro:'吸わない'},
-      {title:'趣味にしたい:',pro:'読書/料理'}
+      {title:'性格:',item:'マイペース'},
+      {title:'趣味:',item:'キャンプ/モノポリー/HTML'},
+      {title:'タイプ:',item:'インドア'},
+      {title:'お酒:',item:'飲まない'},
+      {title:'タバコ:',item:'吸わない'},
+      {title:'趣味にしたい:',item:'読書/料理'}
       ]
     }
   }
@@ -69,7 +69,7 @@ p{
 }
 
 .p2{
-  color:gray;
+  color:#90a4ae;
 }
 
 span{

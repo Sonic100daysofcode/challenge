@@ -22,21 +22,12 @@ export default {
   name: 'profile',
   data () {
     return {
-      name: '<基本情報>',
+      name: '<言語経験>',
       profi:[
-       {title:'ニックネーム:',pro:'そにまる'},
-       {title:'年齢:',pro:'21 years old'},
-       {title:'血液型:',pro:'A型'},
-       {title:'出身地:',pro:'兵庫県'}
-      ],
-      name2:'<性格・趣味>',
-      proc:[
-      {title:'性格:',pro:'マイペース'},
-      {title:'趣味:',pro:'キャンプ/モノポリー/HTML'},
-      {title:'タイプ:',pro:'インドア'},
-      {title:'お酒:',pro:'飲まない'},
-      {title:'タバコ:',pro:'吸わない'},
-      {title:'趣味にしたい:',pro:'読書/料理'}
+       {title:'HTML:',pro:'2年'},
+       {title:'CSS:',pro:'2年'},
+       {title:'Javascript:',pro:'1年'},
+       {title:'Vuejs:',pro:'1週間'}
       ]
     }
   }
@@ -52,7 +43,7 @@ div.profile {
 
 div.content {
   border-radius: 15px;
-  background: #e3f2fd;
+  background: #e8f5e9;
   margin: 0px 370px 0px 370px;
 }
 

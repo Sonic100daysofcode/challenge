@@ -10,7 +10,6 @@
     <h3> {{ name2 }}</h3>
     <p v-for=" t2 in proc">
       <span class="p1">{{t2.title}}</span>
-      <span class="p2">{{t2.pro}}</span>
     </p>
   </div>
     </div>

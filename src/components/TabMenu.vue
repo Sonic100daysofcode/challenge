@@ -38,13 +38,13 @@ ol {
 }
 
 li {
-  width: 100px;
+  width: 50px;
   height: 50px;
   margin-left:10px;
   margin-right:10px;
-  font-size: 14px;
-  background-color: skyblue;
-  border-radius: 8px;
+  font-size: 12px;
+  background-color: #b9f6ca;
+  border-radius: 70px;
   position: relative;
 }
 
@@ -59,7 +59,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: black;
   text-decoration: none;
   line-height: 50px;
 }

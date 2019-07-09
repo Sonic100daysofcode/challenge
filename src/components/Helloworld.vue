@@ -1,7 +1,7 @@
 <template>
 
      <div class="output">
-     	<h1> My Portfolio </h1>
+     	<img src="./img/Portfolio_icon.png" style="width:50px;"> <h1>My Portfolio </h1>
     <div class="content" v-for="t1 in port">
     	<h3> {{ t1.name }} </h3>
  	    <p> {{ t1.text }} </p>

@@ -2,22 +2,24 @@
   <div class="skill">
     <div class="content">
     <h3> {{ name }} </h3>
-    <p v-for="t1 in profi">
+    <div v-for="t1 in profi">
           <span class="p1">{{ t1.title }}</span>
           <span class="p2">{{ t1.item }}</span>
-    </p></div>
+          <p></p>
+    </div>
+  </div><br>
     <div class="content">
     <h3> {{ name2 }}</h3>
-    <p v-for=" t2 in proc">
+    <div v-for=" t2 in proc">
       <span class="p3">{{t2.title}}</span>
-    </p>
+    </div>
   </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
+ export default {
   name: 'skill',
   data () {
     return {
@@ -78,6 +80,7 @@ p{
 span{
   display:inline-block;
   width:15em;
+  margin:20px,0px,20px,20px;
 }
 
 </style>

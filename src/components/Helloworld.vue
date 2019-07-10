@@ -31,7 +31,7 @@ export default {
     port:[
       {mode: '1',name: 'About me',text: '21 years old,student programmer'},
       {mode: '2',name: 'Skills',text: 'html,css,javascript'},
-      {mode: '3',name: 'interest',text: 'C++,C#,Java,React'}
+      {mode: '3',name: 'Interest',text: 'C++,C#,Java,React'}
       ]
     }
   }

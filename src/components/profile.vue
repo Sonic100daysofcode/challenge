@@ -1,15 +1,15 @@
 <template>
   <div class="profile">
     <div class="content">
-    <h3> {{ name }} </h3>
+    <h3>{{ name }} </h3>
     <p v-for="t1 in profi">
-          <span class="p1">{{ t1.title }}</span>
+          <span class="p1"><i class="fas fa-circle"></i>{{ t1.title }}</span>
           <span class="p2">{{ t1.item }}</span>
     </p></div>
     <div class="content">
     <h3> {{ name2 }}</h3>
     <p v-for=" t2 in proc">
-      <span class="p1">{{t2.title}}</span>
+      <span class="p1"><i class="fas fa-bookmark"></i>{{t2.title}}</span>
       <span class="p2">{{t2.item}}</span>
     </p>
   </div>
@@ -22,7 +22,7 @@ export default {
   name: 'profile',
   data () {
     return {
-      name: '<基本情報>',
+      name: '基本情報',
       profi:[
        {title:'ニックネーム:',item:'そにまる'},
        {title:'年齢:',item:'21 years old'},
@@ -30,7 +30,7 @@ export default {
        {title:'血液型:',item:'A型'},
        {title:'出身地:',item:'兵庫県'}
       ],
-      name2:'<性格・趣味>',
+      name2:'性格・趣味',
       proc:[
       {title:'性格:',item:'マイペース'},
       {title:'趣味:',item:'キャンプ/モノポリー/HTML'},

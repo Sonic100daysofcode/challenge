@@ -1,11 +1,24 @@
 <template>
 
      <div class="output">
-     	<img src="./img/Portfolio_icon.png" style="width:50px;"> <h1>My Portfolio </h1>
-    <div class="content" v-for="t1 in port">
-    	<h3> {{ t1.name }} </h3>
- 	    <p> {{ t1.text }} </p>
-	</div>
+      <img src="./img/Portfolio_icon.png" style="width:50px;"> 
+      <h1>My Portfolio </h1><br>
+      <div class="content" v-for="t1 in port">
+        <div v-if="t1.mode === '1'">
+          <br><h2><i class="fas fa-user"></i> {{ t1.name }} </h2><br>
+          <p> {{ t1.text }} </p>
+        </div>
+
+        <div v-else-if="t1.mode === '2'">
+            <h2><i class="fas fa-file-code"></i> {{ t1.name }} </h2><br>
+            <p> {{ t1.text }} </p>
+        </div>
+
+        <div v-else>
+           <br><h2><i class="fab fa-react"></i> {{ t1.name }} </h2><br>
+           <p> {{ t1.text }} </p>
+        </div>
+       </div>
   </div>
 </template>
 
@@ -16,9 +29,9 @@ export default {
 
     return {
     port:[
-      {name: 'About me',text: '21 years old ,student programmer👨‍💻,Love html'},
-      {name: 'Skills',text: 'html,css,javascript'},
-      {name: 'interest',text: 'C++,C#,Java,React'}
+      {mode: '1',name: 'About me',text: '21 years old,student programmer'},
+      {mode: '2',name: 'Skills',text: 'html,css,javascript'},
+      {mode: '3',name: 'interest',text: 'C++,C#,Java,React'}
       ]
     }
   }
@@ -29,15 +42,20 @@ export default {
 <style scoped>
 
 div.output {
-  text-align: center;
 }
 
 div.content {
-  background-color: #;
+  width:30%;
   display: inline-block;
-  margin: 10px;
-  width: 30%;
 }
+
+h1{
+}
+
+h2{
+  color:#f8bbd0;
+}
+
 
 h3 {
   color: #f8bbd0;

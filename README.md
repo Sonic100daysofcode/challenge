@@ -1,6 +1,6 @@
 # 100daysofcoce
 
-> learn vueks
+> learn vuejs
 
 ## Build Setup
 

@@ -1,18 +1,18 @@
 <template>
   <div class="profile">
     <div class="content">
-    <h3>{{ name }} </h3>
-    <p v-for="t1 in profi">
-          <span class="p1"><i class="fas fa-circle"></i>{{ t1.title }}</span>
-          <span class="p2">{{ t1.item }}</span>
-    </p></div>
+      <h3>{{ name }} </h3>
+      <p v-for="t1 in profi">
+        <span class="p1"><i class="fas fa-circle"></i>{{ t1.title }}</span>
+        <span class="p2">{{ t1.item }}</span>
+      </p>
+    </div>
     <div class="content">
-    <h3> {{ name2 }}</h3>
-    <p v-for=" t2 in proc">
-      <span class="p1"><i class="fas fa-bookmark"></i>{{t2.title}}</span>
-      <span class="p2">{{t2.item}}</span>
-    </p>
-  </div>
+      <h3> {{ name2 }}</h3>
+      <p v-for=" t2 in proc">
+        <span class="p1"><i class="fas fa-bookmark"></i>{{t2.title}}</span>
+        <span class="p2">{{t2.item}}</span>
+      </p>
     </div>
   </div>
 </template>

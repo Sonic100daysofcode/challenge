@@ -1,5 +1,4 @@
 <template>
-
      <div class="output">
       <h1><i class="fas fa-portrait"></i></h1>
       <h1>My Portfolio </h1><br>
@@ -8,19 +7,27 @@
           <br><h2><i class="fas fa-user"></i> {{ t1.name }} </h2><br>
           <p> {{ t1.text }} </p>
         </div>
-
         <div v-else-if="t1.mode === '2'">
             <h2><i class="fas fa-file-code"></i> {{ t1.name }} </h2><br>
             <p> {{ t1.text }} </p>
         </div>
-
         <div v-else>
            <br><h2><i class="fab fa-react"></i> {{ t1.name }} </h2><br>
            <p> {{ t1.text }} </p>
         </div>
        </div>
-       <div class="content"><h1 style="display:inline-block"><a href="https://twitter.com/_SoniTri" target="__blank"><i class="fab fa-twitter-square fa-2x"></i></a></h1>
-       <h1 style="display:inline-block"><a href="https://github.com/Sonic100daysofcode/challenge" target="__blank"><i class="fab fa-github fa-2x"></i></a></h1></div>
+       <div class="content">
+        <h1 style="display:inline-block">
+          <a href="https://twitter.com/_SoniTri" target="__blank">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+        </h1>
+        <h1 style="display:inline-block">
+          <a href="https://github.com/Sonic100daysofcode/challenge" target="__blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </h1>
+       </div>
   </div>
 </template>
 

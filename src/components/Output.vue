@@ -1,20 +1,19 @@
 <template>
 
      <div class="output">
-      <br>
-    <div class="content" v-for="t1 in out">
-    <h3> {{ t1.title }} </h3>
-    <p> {{ t1.text }} </p>
-    <p> {{ t1.prog}}</p>
-    <div v-if="t1.title==='でじふぁーむ。'">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/OFlpBERf_1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div v-if="t1.title==='チャリ共'"><iframe width="560" height="315" src="https://www.youtube.com/embed/L9KfMYbF5kw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-
-
-  </div>
+       <br>
+       <div class="content" v-for="t1 in out">
+        <h3> {{ t1.title }} </h3>
+        <p> {{ t1.text }} </p>
+        <p> {{ t1.prog }}</p>
+        <div v-if="t1.title==='でじふぁーむ。'">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/OFlpBERf_1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div v-if="t1.title==='チャリ共'">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/L9KfMYbF5kw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       </div>
+      </div>
 </template>
 
 <script>

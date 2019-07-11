@@ -1,6 +1,6 @@
 <template>
      <div class="output">
-      <h1><i class="fas fa-portrait"></i></h1>
+      <h1><i class="far fa-address-card"></i></h1>
       <h1>My Portfolio </h1><br>
       <div class="content" v-for="t1 in port">
         <div v-if="t1.mode === '1'">

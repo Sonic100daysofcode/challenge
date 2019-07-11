@@ -34,10 +34,6 @@ export default {
       {mode: '1',name: 'About me',text: '21 years old,student programmer'},
       {mode: '2',name: 'Skills',text: 'html,css,javascript'},
       {mode: '3',name: 'Interest',text: 'C++,C#,Java,React'}
-      ],
-    urls:[
-      {url:'https://twitter.com/_SoniTri'},
-      {url:'https://github.com/Sonic100daysofcode/challenge'},
       ]
       }
     }

@@ -18,7 +18,7 @@ new Vue({
   template: '<App/>'
 })
 // main.js
-import '@fortawesome/fontawesome-free/css/all.css' // Ensure you are using css-loader
+import './fontawesome-free/css/all.css' // Ensure you are using css-loader
 
 
 Vue.use(Vuetify, {

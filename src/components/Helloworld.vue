@@ -19,6 +19,8 @@
            <p> {{ t1.text }} </p>
         </div>
        </div>
+       <div class="content"><h1 style="display:inline-block"><a href="https://twitter.com/_SoniTri" target="__blank"><i class="fab fa-twitter-square fa-2x"></i></a></h1>
+       <h1 style="display:inline-block"><a href="https://github.com/Sonic100daysofcode/challenge" target="__blank"><i class="fab fa-github fa-2x"></i></a></h1></div>
   </div>
 </template>
 
@@ -32,9 +34,13 @@ export default {
       {mode: '1',name: 'About me',text: '21 years old,student programmer'},
       {mode: '2',name: 'Skills',text: 'html,css,javascript'},
       {mode: '3',name: 'Interest',text: 'C++,C#,Java,React'}
+      ],
+    urls:[
+      {url:'https://twitter.com/_SoniTri'},
+      {url:'https://github.com/Sonic100daysofcode/challenge'},
       ]
+      }
     }
-  }
 }
 </script>
 
@@ -65,6 +71,10 @@ p {
   width: 90%;
   display: inline-block;
   text-align: center;
+}
+
+a{
+  color:#000
 }
 
 </style>

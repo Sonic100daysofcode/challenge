@@ -1,4 +1,4 @@
-# 100daysofcoce
+# 100daysofcode
 
 > learn vuejs
 

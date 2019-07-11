@@ -3,7 +3,15 @@
     <div class="content">
     <h3> {{ name }} </h3>
     <div v-for="t1 in profi">
-          <span class="p1">{{ t1.title }}</span>
+          <span class="p1">
+          <div v-if="t1.title==='HTML:'"><i class="fab fa-html5"></i>{{ t1.title }}</div>
+          <div v-else-if="t1.title==='CSS:'"><i class="fab fa-css3"></i>{{ t1.title }}</div>
+          <div v-else-if="t1.title==='Javascript:'"><i class="fab fa-js-square"></i>{{ t1.title }}</div>
+          <div v-else-if="t1.title==='C:'"><i class="fab fa-cuttlefish"></i>{{ t1.title }}</div>
+          <div v-else-if="t1.title==='Python3:'"><i class="fab fa-python"></i>{{ t1.title }}</div>
+          <div v-else-if="t1.title==='Vuejs:'"><i class="fab fa-vuejs"></i>{{ t1.title }}</div>
+
+          <!--{{ t1.title }}--></span>
           <span class="p2">{{ t1.item }}</span>
           <p></p>
     </div>

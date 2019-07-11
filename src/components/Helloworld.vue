@@ -1,7 +1,7 @@
 <template>
 
      <div class="output">
-      <img src="./img/Portfolio_icon.png" style="width:50px;"> 
+      <h1><i class="fas fa-portrait"></i></h1>
       <h1>My Portfolio </h1><br>
       <div class="content" v-for="t1 in port">
         <div v-if="t1.mode === '1'">

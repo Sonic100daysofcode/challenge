@@ -1,7 +1,6 @@
-# 100daysofcode
+# test
 
-> learn vuejs
->https://sonic100daysofcode.github.io/challenge/#/
+> learn
 
 ## Build Setup
 
